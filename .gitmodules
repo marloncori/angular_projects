@@ -1,0 +1,3 @@
+[submodule "buttons-app"]
+	path = buttons-app
+	url = https://github.com/marloncori/angular_projects

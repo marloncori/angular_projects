@@ -1,0 +1,11 @@
+angular
+deno
+node_modules
+employee-app/node_modules
+empleados-app/node_modules
+gift-idea-generator/node_modules
+qr-code-generator/node_modules
+quiz-app/node_modules
+sort-algorithm-visualizer/node_modules
+todo-app/node_modules
+string-todos/node_modules

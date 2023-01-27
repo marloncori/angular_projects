@@ -1,0 +1,66 @@
+
+Link:
+  <!-- Include the Tailwind CSS library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+  <!-- Include the font awesome library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+------------------------------------------------------------------ 
+1 - WITH WEBPACK
+
+  a. Install these 
+   npm install webpack --save-dev
+ 
+   npm install style-loader css-loader postcss-loader --save-dev
+
+  b. Create the webpack.config.js and the tailwind.config.js files
+
+------------------------------------------------------------------ 
+2 - WITH ANGULAR
+  a. Install these 
+    npm install -D tailwindcss postcss autoprefixer
+
+  b. Initialize Tailwind configuration
+    npx tailwindcss
+
+  c. The tailwind.config.js file will be automatically generated.
+     add
+         content: [
+           "./src/**/*.{html,ts}",
+         ],
+
+  d. it looks in the source directory and it matchs any file that has the html
+      and ts extensions
+
+  e. add in the styles.scss file the following:
+     @tailwind base;
+     @tailwind components;
+     @tailwind utilities;
+
+    or
+     @import 'tailwindcss/base';
+     @import 'tailwindcss/components';
+     @import 'tailwindcss/utilities';     to .css file
+
+------------------------------------------------------------------ 
+4 - WITH ANGULAR, second way:
+   a. Type in the terminal for the created app:
+      ng add @ngneat/tailwind
+
+   b. as plugins you can download form and typography
+------------------------------------------------------------------ 
+5 - Font Awesome for Angular:
+
+   https://github.com/FortAwesome/angular-fontawesome
+
+------------------------------------------------------------------ 
+Test
+<div class="container mt-5 bg-gray-700 rounded-lg items-center">	 
+ <h1 class="px4 py2 text-3xl font-bold underline">
+    <i class="fas fa-save fa-lg"></i> This will be your TODO list app.<i class="fas fa-list fa-lg"></i>
+  </h1>
+  <h2 class="bg-blue-500 p-10 text-center rounded-full justify-between">
+    <i class="fas fa-save fa-lg"></i> This will be your TODO list app.<i class="fas fa-list fa-lg"></i>
+   </h2>
+</div>
+
